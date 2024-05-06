@@ -25,6 +25,25 @@ class Bucket extends Model
         );
     }
 
+    // Get the used volume
+    // protected function usedVolume(): Attribute
+    // {
+    //     $usedVolume = Bucket::withSum("bucketSuggestions as used_volume", "volume")->pluck('used_volume');
+    //     return Attribute::make(
+    //         // get: fn () => $usedVolume[0] == null ? 0 : $usedVolume[0 ],
+    //         get: fn () => $usedVolume,
+    //     );
+    // }
+
+    // Get the remaining volume
+    // protected function remainingVolume(): Attribute
+    // {
+    //     $usedVolume = Bucket::withSum("bucketSuggestions as used_volume", "volume")->pluck('used_volume');
+    //     return Attribute::make(
+    //         get: fn () => $usedVolume[0] == null ? 0 : $usedVolume[0],
+    //     );
+    // }
+
     // ? ********************************************************** Relations ********************************************************** */
     // with bucket suggestions
     public function bucketSuggestions(): HasMany

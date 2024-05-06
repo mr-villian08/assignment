@@ -95,7 +95,7 @@ const createBall = async (event) => {
 const showBucketSuggestions = async () => {
     try {
         const result = await $.ajax({
-            url: "/bucket-suggestions",
+            url: "/api/bucket-suggestions",
             type: "GET",
             dataType: "json",
             headers: {
